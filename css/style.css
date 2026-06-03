@@ -8,6 +8,15 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  font-family: Inter, sans-serif;
+
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #e2e8f0 50%,
+    #dbeafe 100%
+  );
 }
 
 a {
@@ -184,26 +193,48 @@ button:hover {
 }
 
 .menu-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
 
-  height: 120px;
-
-  background: white;
   border-radius: 16px;
 
-  font-size: 22px;
-  font-weight: 600;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08);
 
-  color: #213547;
-
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .menu-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+  box-shadow:
+    0 10px 30px rgba(59, 130, 246, 0.15);
+}
+
+body::before,
+body::after {
+  content: '';
+
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::before {
+  width: 350px;
+  height: 350px;
+  background: rgba(96, 165, 250, 0.25);
+
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  width: 300px;
+  height: 300px;
+  background: rgba(167, 139, 250, 0.25);
+
+  bottom: -100px;
+  right: -100px;
 }

@@ -5,7 +5,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 // import SimpleLightbox from 'simplelightbox';
 // import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const API_KEY = import.meta.env.VITE_PIXABAY_API_KEY;
+const API_KEY ='56150022-a37073f80270bb0d564c58228'
 
 const form = document.querySelector('.search-form');
 const gallery = document.querySelector('.gallery');
