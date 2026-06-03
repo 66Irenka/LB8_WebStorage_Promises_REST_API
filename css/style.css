@@ -94,3 +94,30 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 360px;
+  margin: 80px auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.feedback-form button {
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
