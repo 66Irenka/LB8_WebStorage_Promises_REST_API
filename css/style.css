@@ -165,3 +165,45 @@ button:hover {
   font-size: 18px;
   margin-top: 12px;
 }
+
+.home-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-page h1 {
+  margin-bottom: 40px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+
+  background: white;
+  border-radius: 16px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #213547;
+
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
