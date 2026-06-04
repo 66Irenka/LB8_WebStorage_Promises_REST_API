@@ -297,3 +297,63 @@ body::after {
     row-gap: 10px;
   }
 }
+
+.home-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  margin: 0 0 40px;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+
+  color: #213547;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 64px 16px;
+  }
+
+  .home-page h1 {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 360px;
+  }
+
+  .menu-card {
+    min-height: 82px;
+    font-size: 20px;
+  }
+}
